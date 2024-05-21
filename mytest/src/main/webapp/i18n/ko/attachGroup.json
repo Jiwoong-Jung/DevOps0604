@@ -1,0 +1,27 @@
+{
+  "mytestApp": {
+    "attachGroup": {
+      "home": {
+        "title": "Attach Groups",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Attach Group",
+        "createOrEditLabel": "Create or edit a Attach Group",
+        "notFound": "No Attach Groups found"
+      },
+      "created": "A new Attach Group is created with identifier { param }",
+      "updated": "A Attach Group is updated with identifier { param }",
+      "deleted": "A Attach Group is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Attach Group { id }?"
+      },
+      "detail": {
+        "title": "Attach Group"
+      },
+      "id": "Id",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "post": "Post",
+      "attach": "Attach"
+    }
+  }
+}

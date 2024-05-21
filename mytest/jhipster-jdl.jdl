@@ -1,0 +1,75 @@
+entity Board {
+    id Long,
+    title String required,
+    category String required,
+    createdAt ZonedDateTime required,
+    createdBy Long required,
+    modifiedAt ZonedDateTime
+    modifiedBy Long
+}
+
+entity Post {
+    id Long,
+    status String required,
+    title String required,
+    contents Blob,
+    readCnt Integer,
+    goodCnt Integer,
+    badCnt Integer,
+    createdAt ZonedDateTime required,
+    createdBy Long required,
+    modifiedAt ZonedDateTime
+    modifiedBy Long
+}
+
+entity AttachGroup {
+    id Long,
+    createdAt ZonedDateTime required,
+    createdBy Long required
+}
+
+entity Attach {
+    id Long,
+    ord Integer,
+    name String,
+    origName String,
+    ext String,
+    contentType String,
+    path String,
+    fileSize Long,
+    createdAt ZonedDateTime required,
+    createdBy Long required,
+    modifiedAt ZonedDateTime
+    modifiedBy Long
+}
+
+entity Comment {
+	  id Long,
+    depth Integer,
+    comment String,
+    readCnt Integer,
+    goodCnt Integer,
+    badCnt Integer,
+    createdAt ZonedDateTime required,
+    createdBy Long required,
+    modifiedAt ZonedDateTime
+    modifiedBy Long
+}
+
+relationship OneToMany {
+    Board{post} to Post,
+    AttachGroup{attach} to Attach,
+    Comment{comment} to Comment{parent},
+}
+
+relationship ManyToOne {
+    Comment{post} to Post
+}
+
+relationship OneToOne {
+  	AttachGroup{post} to Post
+}
+
+dto * with mapstruct
+service all with serviceImpl
+paginate Board, Post, AttachGroup, Attach, Comment with pagination

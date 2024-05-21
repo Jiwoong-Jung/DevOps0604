@@ -1,0 +1,35 @@
+{
+  "mytestApp": {
+    "post": {
+      "home": {
+        "title": "Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Post",
+        "createOrEditLabel": "Create or edit a Post",
+        "notFound": "No Posts found"
+      },
+      "created": "A new Post is created with identifier { param }",
+      "updated": "A Post is updated with identifier { param }",
+      "deleted": "A Post is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Post { id }?"
+      },
+      "detail": {
+        "title": "Post"
+      },
+      "id": "Id",
+      "status": "Status",
+      "title": "Title",
+      "contents": "Contents",
+      "readCnt": "Read Cnt",
+      "goodCnt": "Good Cnt",
+      "badCnt": "Bad Cnt",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "modifiedAt": "Modified At",
+      "modifiedBy": "Modified By",
+      "board": "Board",
+      "attachGroup": "Attach Group"
+    }
+  }
+}
