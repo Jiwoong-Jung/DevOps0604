@@ -1,0 +1,8 @@
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-cache"
+    implementation "org.hibernate.orm:hibernate-jcache"
+    testImplementation "org.testcontainers:junit-jupiter"
+    testImplementation "org.testcontainers:testcontainers"
+    implementation libs.redisson
+    // jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
+}
